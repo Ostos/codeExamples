@@ -1,0 +1,41 @@
+body{
+	width: 672px;
+	height: 480px;
+	margin: 10em auto 0 auto;
+}
+
+#Playfield{
+	width: 100%;
+	height: 100%;
+	perspective: 1000px;
+}
+
+.card{
+	width: 11.9%; 
+	height: 12.5%;
+	float: left;
+	margin: 1px;
+	border: 1px solid black;
+	transform: rotateY(0deg);
+	background-color: white;
+	transition: transform 1s, background-color 0s linear 0.3s;
+}
+
+.down{
+	color: red;
+	background-color: red;
+	transform: rotateY(180deg);
+}
+
+.one:after, .two:after, .three:after, .four:after, .five:after, .six:after,
+.seven:after, .eight:after, .nine:after, .ten:after, .eleven:after, .twelve:after{
+	content: attr(data-face);
+	color: red;
+	text-align: center;
+	display: block;
+	margin: 25% auto 0 auto;
+}
+
+.ready{
+	background-color: #ccc;
+}
