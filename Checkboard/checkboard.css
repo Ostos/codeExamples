@@ -1,0 +1,42 @@
+body{
+	width: 510px;
+	height: 510px;
+}
+
+body > div{
+	width: 100%;
+	height: 100%;
+	border: 5px solid yellow;
+}
+
+body > div div{
+	width: 100%;
+	height: 64px;
+}
+
+body > div div:nth-child(odd) div:nth-child(odd){
+	width: 12.5%;
+	background-color: red;
+	float: left;
+}
+
+body > div div:nth-child(odd) div:nth-child(even){
+	width: 12.5%;
+	/*height: 100%;*/
+	background-color: black;
+	float: left;
+}
+
+body > div div:nth-child(even) div:nth-child(odd){
+	width: 12.5%;
+	/*height: 100%;*/
+	background-color: black;
+	float: left;
+}
+
+body > div div:nth-child(even) div:nth-child(even){
+	width: 12.5%;
+	/*height: 100%;*/
+	background-color: red;
+	float: left;
+}
